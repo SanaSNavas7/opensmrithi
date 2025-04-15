@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import InstitutionDashboardLayout from "./InstitutionDashboardLayout";
 
-function InstitutionDashboard() {
+const InstitutionDashboard = () => {
   return (
-    <div>InstitutionDashboard</div>
-  )
-}
+    <InstitutionDashboardLayout>
+      <Outlet />
+    </InstitutionDashboardLayout>
+  );
+};
 
-export default InstitutionDashboard
+export default InstitutionDashboard;
