@@ -18,10 +18,26 @@ const InstitutionDashboard = () => {
           <div>
             <h2 className="text-xl font-bold mb-4">Institution Menu</h2>
             <ul className="space-y-2">
-              <li><Link to="/institution-dashboard">Dashboard</Link></li>
-              <li><Link to="/institution-dashboard/records">Educational Records</Link></li>
-              <li><Link to="/institution-dashboard/analytics">Analytics</Link></li>
-              <li><Link to="/institution-dashboard/support">Support</Link></li>
+              <li>
+                <Link to="/institution-dashboard">Dashboard</Link>
+              </li>
+              <li><Link to="/institution-dashboard/publish-certificate">Publish Certificate</Link></li>
+
+              <li>
+                <Link to="/institution-dashboard/verification-pending">Pending Verification</Link>
+              </li>
+              <li>
+                <Link to="/institution-dashboard/add-course">Add New Course</Link>
+              </li>
+              <li>
+                <Link to="/institution-dashboard/records">Educational Records</Link>
+              </li>
+              <li>
+                <Link to="/institution-dashboard/analytics">Analytics</Link>
+              </li>
+              <li>
+                <Link to="/institution-dashboard/support">Support</Link>
+              </li>
             </ul>
           </div>
         )}
@@ -32,7 +48,7 @@ const InstitutionDashboard = () => {
         <h1 className="text-3xl font-semibold mb-6">Institution Dashboard</h1>
 
         {/* Default Content when no route is active */}
-        <div className="text-lg text-gray-700">
+        <div className="text-lg text-gray-700 mb-6">
           <p>
             Welcome to the Institution Dashboard! Please select a section from the sidebar to view more details.
           </p>
